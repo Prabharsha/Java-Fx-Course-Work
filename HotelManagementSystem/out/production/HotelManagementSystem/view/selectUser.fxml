@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="selectUserContext" prefHeight="722.0" prefWidth="1051.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SelectUserController">
+   <children>
+      <ImageView disable="true" fitHeight="808.0" fitWidth="1239.0" layoutX="-99.0" layoutY="-11.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/patrick-robert-doyle-AH8zKXqFITA-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="234.0" fitWidth="232.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/homelog.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="491.0" layoutY="65.0" text="Welcome" textFill="#06389a" wrapText="true">
+         <font>
+            <Font name="Berlin Sans FB" size="67.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00000093" height="39.66" offsetX="2.5" offsetY="2.5" radius="19.33" width="39.66" />
+         </effect>
+      </Label>
+      <Label layoutX="454.0" layoutY="149.0" text="Blue Ocean Hotel" textFill="#01172f">
+         <font>
+            <Font name="Roboto Regular" size="48.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Separator layoutX="364.0" layoutY="206.0" opacity="0.79" prefHeight="0.0" prefWidth="535.0">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <JFXButton buttonType="RAISED" layoutX="877.0" layoutY="602.0" onAction="#signInAdmin" opacity="0.89" pickOnBounds="false" prefHeight="52.0" prefWidth="222.0" style="-fx-background-color: #192a56;" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="877.0" layoutY="701.0" onAction="#signIn" opacity="0.89" pickOnBounds="false" prefHeight="52.0" prefWidth="222.0" style="-fx-background-color: #192a56;" text="Receptionist" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

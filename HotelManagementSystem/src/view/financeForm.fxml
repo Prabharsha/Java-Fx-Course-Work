@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="incomeContext" prefHeight="663.0" prefWidth="1029.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.financeFormController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="1029.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/brett-campbell-k1OlQaEK2qI-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="136.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/homelog.jpeg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="637.0" onAction="#back" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #30336b;" text="Back" textFill="WHITE" />
+      <TableView layoutX="400.0" layoutY="44.0" prefHeight="612.0" prefWidth="599.0">
+        <columns>
+          <TableColumn prefWidth="168.0" text="Month" />
+          <TableColumn prefWidth="127.0" text="Income" />
+            <TableColumn prefWidth="152.0" text="Year" />
+            <TableColumn prefWidth="141.0" text="Income" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

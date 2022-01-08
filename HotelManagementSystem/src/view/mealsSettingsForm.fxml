@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mealManageContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mealsSettingsFormController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1094.0">
+         <children>
+            <ImageView fitHeight="854.0" fitWidth="1094.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="226.0" layoutY="14.0" prefHeight="43.0" prefWidth="189.0" style="-fx-background-color: #f5f6fa; -fx-alignment: center; -fx-background-radius: 8;" text="Manage Meals" textFill="#001d68">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="173.0" fitWidth="174.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/homelog.jpeg" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="54.0" layoutY="413.0" onAction="#saveData" style="-fx-background-color: #4cd137; -fx-background-radius: 8;" text="+ Add Meal Package">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtPackageM" labelFloat="true" layoutX="54.0" layoutY="278.0" prefHeight="31.0" prefWidth="189.0" promptText="Meal Package" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="984.0" layoutY="685.0" onAction="#backTo" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #2f3542; -fx-background-radius: 8;" text="Back" textFill="WHITE" />
+            <JFXButton layoutX="27.0" layoutY="592.0" onAction="#refresh" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #273c75;" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="131.0" layoutY="597.0" text="Note - Refresh To Load Previous Data" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtPrice" labelFloat="true" layoutX="54.0" layoutY="344.0" prefHeight="31.0" prefWidth="189.0" promptText="Meal Price" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <TableView fx:id="tblMeal" layoutX="467.0" layoutY="87.0" prefHeight="584.0" prefWidth="608.0">
+              <columns>
+                <TableColumn fx:id="colPackageM" prefWidth="145.0" text="Meal Package" />
+                <TableColumn fx:id="colPrice" prefWidth="159.0" text="Package Price" />
+                  <TableColumn fx:id="colDelete" prefWidth="149.0" text="Remove Package" />
+                  <TableColumn fx:id="colEdit" prefWidth="154.0" text="Edit Package" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

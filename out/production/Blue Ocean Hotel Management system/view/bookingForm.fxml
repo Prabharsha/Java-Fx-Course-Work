@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bookingContext" prefHeight="771.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.bookingFormController">
+   <children>
+      <ImageView fitHeight="820.0" fitWidth="1176.0" layoutY="-6.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/andrew-neel-B4rEJ09-Puo-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="551.0" layoutY="22.0" prefHeight="21.0" prefWidth="165.0" text="Customer Details">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtId" layoutX="168.0" layoutY="61.0" prefHeight="37.0" prefWidth="223.0" promptText="Customer NIC" unFocusColor="BLACK">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="461.0" layoutY="61.0" prefHeight="37.0" prefWidth="223.0" promptText="Customer Name" unFocusColor="BLACK">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAdd" layoutX="733.0" layoutY="61.0" prefHeight="37.0" prefWidth="223.0" promptText="Customer Address" unFocusColor="BLACK">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContact" layoutX="163.0" layoutY="127.0" prefHeight="37.0" prefWidth="223.0" promptText="Customer Contact" unFocusColor="BLACK">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" layoutX="458.0" layoutY="127.0" prefHeight="37.0" prefWidth="230.0" promptText="Customer Email" unFocusColor="BLACK">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbMeals" labelFloat="true" layoutX="983.0" layoutY="130.0" prefHeight="31.0" prefWidth="172.0" promptText="Meal" unFocusColor="BLACK" />
+      <ImageView fitHeight="125.0" fitWidth="158.0" layoutX="12.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/homelog.jpeg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="976.0" layoutY="73.0" onAction="#roomsInMaintain" opacity="0.97" style="-fx-background-color: #341f97;" text="Check Rooms Availability" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="784.0" layoutY="175.0" onAction="#saveData" opacity="0.92" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #32ff7e;" text="Confirm Bookimg" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1094.0" layoutY="734.0" onAction="#bakTo" opacity="0.92" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #130f40;" text="Back" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="983.0" layoutY="175.0" onAction="#printToken" opacity="0.92" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #4b4b4b;" text="Print Token" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtRoomNo" layoutX="733.0" layoutY="127.0" prefHeight="37.0" prefWidth="223.0" promptText="Room No." unFocusColor="BLACK">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tblCustomer" layoutX="10.0" layoutY="222.0" prefHeight="502.0" prefWidth="1159.0">
+        <columns>
+          <TableColumn fx:id="colNIC" prefWidth="120.0" text="Customer NIC" />
+          <TableColumn fx:id="colName" prefWidth="163.0" text="Customer Name" />
+            <TableColumn fx:id="colAdd" prefWidth="201.0" text="Customer Address" />
+            <TableColumn fx:id="colContact" prefWidth="195.0" text="Customer Contact" />
+            <TableColumn fx:id="colEmail" prefWidth="157.0" text="Customer E-mail" />
+            <TableColumn fx:id="colRoomNo" prefWidth="115.0" text="Room No." />
+            <TableColumn fx:id="colDelete" prefWidth="93.0" text="Delete" />
+            <TableColumn fx:id="colEdit" prefWidth="125.0" text="Edit Details" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="734.0" onAction="#refreshTbl" style="-fx-background-color: #341f97;" text="Refresh Table" textFill="WHITE" />
+      <Label layoutX="137.0" layoutY="739.0" text="Note - Refresh To Load previous Data" textFill="#cd1212">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

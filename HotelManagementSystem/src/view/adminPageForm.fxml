@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminPageContext" prefHeight="596.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adminPageFormController">
+   <children>
+      <ImageView fitHeight="694.0" fitWidth="914.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/nik-lanus-YMOHw3F1Hdk-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="162.0" fitWidth="165.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="169.0" fitWidth="192.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/homelog.jpeg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="579.0" layoutY="273.0" onAction="#goToRooms" prefHeight="39.0" prefWidth="264.0" style="-fx-background-color: #00cec9; -fx-background-radius: 8;" text="Rooms" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="579.0" layoutY="334.0" onAction="#goToMeals" prefHeight="39.0" prefWidth="264.0" style="-fx-background-color: #f9ca24; -fx-background-radius: 9;" text="Meals" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="579.0" layoutY="395.0" onAction="#goToFinancials" prefHeight="39.0" prefWidth="264.0" style="-fx-background-color: #30336b; -fx-background-radius: 9;" text="Financials" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="815.0" layoutY="20.0" onAction="#logOut" style="-fx-background-color: #273c75; -fx-background-radius: 9;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

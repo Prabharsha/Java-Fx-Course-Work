@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="recepPageContext" prefHeight="787.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.recepPageFormController">
+   <children>
+      <ImageView fitHeight="822.0" fitWidth="1206.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/andrew-neel-B4rEJ09-Puo-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="56.0" layoutY="287.0" onAction="#goToBooking" style="-fx-background-color: #2d3436; -fx-background-radius: 10;" text="Reserve a Room" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="59.0" layoutY="348.0" onAction="#viewRoomsInMaintain" style="-fx-background-color: #2d3436; -fx-background-radius: 10;" text="Mark Rooms In Maintenance" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="187.0" fitWidth="191.0" layoutX="999.0" layoutY="14.0" opacity="0.96" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/homelog.jpeg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="16.0" layoutY="20.0" onAction="#LogOut" opacity="0.83" style="-fx-background-color: F6F4D2; -fx-background-radius: 12;" text="Log Out" textFill="#c81927">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

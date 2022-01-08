@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.repSignInFormController">
+   <children>
+      <AnchorPane fx:id="adminFormContext" prefHeight="659.0" prefWidth="983.0">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="651.0" prefWidth="1071.0">
+               <children>
+                  <ImageView fitHeight="668.0" fitWidth="1103.0" layoutX="-10.0" layoutY="-10.0" opacity="0.98" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/amit-jain-Nl46Z6Fzvr8-unsplash.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow height="1.0" radius="0.0" width="0.0" />
+                     </effect>
+                  </ImageView>
+                  <HBox layoutX="152.0" layoutY="354.0" opacity="0.62" prefHeight="43.0" prefWidth="314.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <JFXTextField fx:id="txtName" focusColor="WHITE" labelFloat="true" prefHeight="60.0" prefWidth="348.0" style="-fx-background-color: #ffffff;" unFocusColor="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="152.0" layoutY="454.0" opacity="0.62" prefHeight="43.0" prefWidth="314.0" style="-fx-background-color: #f5f6fa;">
+                     <children>
+                        <JFXTextField fx:id="txtPasswoed" prefHeight="43.0" prefWidth="329.0" style="-fx-background-color: #ffffff;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <Label layoutX="152.0" layoutY="325.0" prefHeight="21.0" prefWidth="156.0" text="User Name / NIC" textFill="WHITE" />
+                  <Label layoutX="152.0" layoutY="427.0" prefHeight="21.0" prefWidth="79.0" text="Password" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="205.0" fitWidth="273.0" layoutX="29.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/homelog.jpeg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" layoutX="314.0" layoutY="552.0" text="Forgot Password ?" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="152.0" layoutY="555.0" onAction="#goToHome" opacity="0.86" ripplerFill="#0e3bc3" style="-fx-background-color: #f5f6fa;" text="Log In" textFill="#0a0a0a">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="998.0" layoutY="613.0" onAction="#backTo" prefHeight="31.0" prefWidth="62.0" ripplerFill="#0f21a8" style="-fx-background-color: #f5f6fa;" text="Back">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+                  <Label fx:id="label" layoutX="337.0" layoutY="167.0" prefHeight="29.0" prefWidth="468.0" style="-fx-alignment: center;" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
